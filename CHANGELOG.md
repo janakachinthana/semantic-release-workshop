@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/janakachinthana/semantic-release-workshop/compare/v1.1.0...v1.1.1) (2026-02-26)
+
+
+### Bug Fixes
+
+* release issue ([950164b](https://github.com/janakachinthana/semantic-release-workshop/commit/950164bcee5c3ae0b87d51a195ca7c981a017d6a))
+
 # [1.1.0](https://github.com/janakachinthana/semantic-release-workshop/compare/v1.0.1...v1.1.0) (2026-02-26)
 
 
