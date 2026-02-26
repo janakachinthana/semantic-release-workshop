@@ -29,10 +29,14 @@ router.get('/', (req, res) => {
 
 /**
  * GET /health
- * Health check endpoint
+ * Health check endpoint with uptime in seconds
  */
 router.get('/health', (req, res) => {
-  res.json({ status: 'ok', timestamp: new Date().toISOString() });
+  res.json({
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    uptimeSeconds: Math.floor(process.uptime()),
+  });
 });
 
 /**

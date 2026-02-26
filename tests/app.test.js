@@ -23,6 +23,8 @@ describe('GET /health', () => {
     expect(res.statusCode).toBe(200);
     expect(res.body).toHaveProperty('status', 'ok');
     expect(res.body).toHaveProperty('timestamp');
+    expect(res.body).toHaveProperty('uptimeSeconds');
+    expect(typeof res.body.uptimeSeconds).toBe('number');
   });
 });
 
