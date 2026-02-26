@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+const pkg = require('../../package.json');
 
 const router = express.Router();
 
@@ -10,9 +11,9 @@ const router = express.Router();
  */
 router.get('/', (req, res) => {
   res.json({
-    name: 'semantic-release-workshop-test',
-    version: process.env.npm_package_version || '1.0.0',
-    description: 'A Node.js + Express app showcasing semantic-release, conventional commits, and husky',
+    name: pkg.name,
+    version: pkg.version,
+    description: pkg.description,
     endpoints: {
       'GET /': 'API information',
       'GET /health': 'Health check',

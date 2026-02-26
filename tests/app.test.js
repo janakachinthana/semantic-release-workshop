@@ -12,7 +12,7 @@ describe('GET /', () => {
   it('should return API information', async () => {
     const res = await request(app).get('/');
     expect(res.statusCode).toBe(200);
-    expect(res.body).toHaveProperty('name', 'semantic-release-workshop-test');
+    expect(res.body).toHaveProperty('name', 'semantic-release-workshop');
     expect(res.body).toHaveProperty('endpoints');
   });
 });
