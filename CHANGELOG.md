@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/janakachinthana/semantic-release-workshop/compare/v1.1.1...v1.1.2) (2026-02-26)
+
+
+### Bug Fixes
+
+* set as dreat release ([03b16fb](https://github.com/janakachinthana/semantic-release-workshop/commit/03b16fb49d686991033b807801600d56b6b5ecbb))
+
 ## [1.1.1](https://github.com/janakachinthana/semantic-release-workshop/compare/v1.1.0...v1.1.1) (2026-02-26)
 
 
