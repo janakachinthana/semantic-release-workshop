@@ -49,8 +49,9 @@ describe('GET /users/:id', () => {
   it('should return a user by ID', async () => {
     const res = await request(app).get('/users/1');
     expect(res.statusCode).toBe(200);
-    expect(res.body).toHaveProperty('id', 1);
-    expect(res.body).toHaveProperty('name', 'Alice Johnson');
+    expect(res.body).toHaveProperty('data');
+    expect(res.body.data).toHaveProperty('id', 1);
+    expect(res.body.data).toHaveProperty('name', 'Alice Johnson');
   });
 
   it('should return 404 for non-existent user', async () => {

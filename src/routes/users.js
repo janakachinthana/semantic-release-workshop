@@ -32,7 +32,7 @@ router.get('/:id', (req, res) => {
     return res.status(404).json({ error: `User with id ${id} not found` });
   }
 
-  res.json(user);
+  res.json({ data: user });
 });
 
 /**
