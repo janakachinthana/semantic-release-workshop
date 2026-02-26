@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/janakachinthana/semantic-release-workshop/compare/v1.0.0...v1.0.1) (2026-02-26)
+
+
+### Bug Fixes
+
+* **release:** disable github success comment to avoid pr 404 ([e2a2124](https://github.com/janakachinthana/semantic-release-workshop/commit/e2a212489e02b0d3996eb329001be3b57a26f7a7))
+
 # 1.0.0 (2026-02-26)
 
 
