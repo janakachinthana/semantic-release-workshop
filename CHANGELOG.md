@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/janakachinthana/semantic-release-workshop/compare/v1.0.1...v1.1.0) (2026-02-26)
+
+
+### Features
+
+* **api:** add uptime in seconds to health endpoint ([baf8046](https://github.com/janakachinthana/semantic-release-workshop/commit/baf8046ba098aaf2b991b53bb5596e818d457280))
+
 ## [1.0.1](https://github.com/janakachinthana/semantic-release-workshop/compare/v1.0.0...v1.0.1) (2026-02-26)
 
 
