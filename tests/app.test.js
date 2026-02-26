@@ -26,6 +26,15 @@ describe('GET /health', () => {
   });
 });
 
+describe('GET /version', () => {
+  it('should return application version', async () => {
+    const res = await request(app).get('/version');
+    expect(res.statusCode).toBe(200);
+    expect(res.body).toHaveProperty('version');
+    expect(typeof res.body.version).toBe('string');
+  });
+});
+
 describe('GET /users', () => {
   it('should return all users', async () => {
     const res = await request(app).get('/users');

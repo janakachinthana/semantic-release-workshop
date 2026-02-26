@@ -17,6 +17,7 @@ router.get('/', (req, res) => {
     endpoints: {
       'GET /': 'API information',
       'GET /health': 'Health check',
+      'GET /version': 'Application version',
       'GET /users': 'List all users',
       'GET /users/:id': 'Get user by ID',
       'POST /users': 'Create a new user',
@@ -32,6 +33,14 @@ router.get('/', (req, res) => {
  */
 router.get('/health', (req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
+});
+
+/**
+ * GET /version
+ * Returns the application version from package.json
+ */
+router.get('/version', (req, res) => {
+  res.json({ version: pkg.version });
 });
 
 router.get('/test', (req, res) => {
